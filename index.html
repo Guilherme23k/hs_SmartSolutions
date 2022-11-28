@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hs Smart Solutions</title>
+    <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+<!--HEADER-->
+<header>
+<nav class="bg-blue-header shadow-lg fixed w-screen z-40 ">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex justify-between">
+        <div>
+          <!-- Website Logo -->
+          <span href="#" class="flex items-center py-4 px-2">
+            <img src="img/logo.png" class="h-16  sm:h-20" alt="logo">
+            <span class="self-center md:text-2xl lg:text-2xl text-xl whitespace-nowrap font-logo text-white md:ml-1.5 ">HS smart solutions</span>
+          </span>
+        </div>
+        <!-- Primary Navbar items -->
+        <div class="hidden md:flex items-center space-x-3 ">
+          <a href="#section1" class="py-4 px-2 text-blue-400 border-b-4 border-blue-500 font-semibold ">Home</a>
+          <a href="#section2" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-400 transition duration-300">Sobre</a>
+          <a href="#section3" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-400 transition duration-300">Serviços</a>
+          <a href="#section4" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-400 transition duration-300">Contate-nos</a>
+        </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+          x-show="!showMenu"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
+  <!-- mobile menu -->
+  <div class="hidden mobile-menu">
+    <ul class="">
+      <li class="active"><a href="#section1" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+      <li><a href="#section2" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sobre</a></li>
+      <li><a href="#section3" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Serviços</a></li>
+      <li><a href="#section4" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contate-nos</a></li>
+    </ul>
+  </div>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</nav>
+</header>
+
+<!--MAIN-->
+<main>
+
+
+
+<main>
+<section id="section1" class="anime hero bg-cover flex justify-center flex-col text-center w-full">
+  <h1 class="text-5xl mb-10 font-lato sm:mb-4 ">Titulo</h1>
+  <h3 class="text-3xl font-lato">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, praesentium?</h3>
+</section>
+<br><br><br><br>
+
+<section class="anime" id="section2">
+
+    <h2 class="mt-5 text-3xl font-lato text-center mb-8 relative barra">Por que nos escolher:</h2>
+    <p class="mb-12 text-center">Somos uma empresa extremamente determinada com a satisfação e fidelização com o cliente.</p>
+
+    <div class="flex flex-wrap flex-row relative justify-center w-full">
+      <div class="principal mx-3 shadow-inner relative bg-grey-flex max-h-57  max-w-sm overflow-hidden mb-7 rounded-lg">
+        <span class="block text-4xl md:text-5xl font-bold absolute leading-normal">01</span>
+      <h4 class="text-white font-lato text-3xl mb-2">Mais segurança</h4>
+      <p class="text-whitesmoke ">Garantimos total segurança e controle dentro de suas instalações!</p>
+      <img class="imagem absolute top-0 left-0 h-full w-full hover: opacity-100 " src="img/nuvem-roxa.jpg" alt="">
+      </div>
+    
+      <div class="principal mx-3 shadow-inner relative bg-grey-flex max-h-57 max-w-sm overflow-hidden mb-7 rounded-lg ">
+        <span class="block text-4xl md:text-5xl font-bold absolute leading-normal">02</span>
+        <h4 class="text-white font-lato text-3xl mb-2">Mais controle</h4>
+        <p class="text-whitesmoke">Tenha mais liberdade e segurança em sua região, tenha o controle em suas mãos!</p>
+      <img class="imagem absolute top-0 left-0 h-full w-full hover: opacity-100 " src="img/Security-cam.jpg" alt="">
+      </div>
+    
+      <div class="principal mx-3 shadow-inner relative bg-grey-flex max-h-57 max-w-sm overflow-hidden mb-7 rounded-lg ">
+        <span class="block text-4xl md:text-5xl font-bold absolute leading-normal">03</span>
+        <h4 class="text-white font-lato text-3xl mb-2">Mais comodidade</h4>
+        <p class="text-whitesmoke">Não se preocupe mais com os perigos externos em casa ou em sua empresa, tenha mais comodidade utilizando nossos serviços!</p>
+      <img class="imagem absolute top-0 left-0 h-full w-full hover: opacity-100 " src="img/familia_sofa.jpg" alt="">
+      </div>
+</div>
+</section>
+
+<section id="section3" class=" anime grid grid-rows-1 md:grid-cols-2 overflow-hidden">
+  <div class="w-full h-full bg-gray-100 flex justify-center">
+
+    <div class="bg-white h-52 w-32 md:h-64 md:w-56 inline-block p-6 md:ml-24 rounded md:relative md:top-36 top-0 ">
+      <img src="img/laptop.ico" class="w-10 md:w-16 p-1 md:p-4 bg-blue-bottom rounded " alt="">
+      <h2 class="font-arimo text-xs md:text-xl my-2 font-bold text-blue-font">Comercialização</h2>
+      <p class="text-xs md:text-sm">Utilizamos produtos de qualidade para satisfazer melhor os nossos clientes</p>
+  </div>
+
+  <div class="bg-white h-52 md:h-64 md:w-64 w-32 inline-block p-6 left-2 rounded md:relative top-36 sm:top-2 mx-4 ">
+    <img src="img/engenheiro.ico" class="w-10 md:w-16 p-1 md:p-4 bg-blue-bottom rounded " alt="">
+    <h2 class="font-arimo text-xs md:text-xl  font-bold text-blue-font">Instalação</h2>
+    <p class="text-xs md:text-sm">Garantimos instalação segura e equipamentos de qualidade!</p>
+</div>
+
+<div class="bg-white h-52 md:h-64 md:w-64 w-32 inline-block p-6 md:mr-8 rounded md:relative top-60 md:mt-8 right-40 ">
+  <img src="img/aperto.ico" class="w-10 md:w-16 p-1 md:p-4 bg-blue-bottom rounded " alt="">
+  <h2 class="font-arimo text-xs md:text-xl  font-bold text-blue-font">Consultoria</h2>
+  <p class="text-xs md:text-sm">Realizamos consultoria para alinharmos suas necessidades com os nossos serviços!</p>
+</div>
+  </div>
+  <div class="w-full h-full bg-gray-100 flex justify-center mb-36">
+    <div class="">
+      <div class="sobre-info relative top-4 mr-2 mt-5">
+        <h1 class="font-roboto flex justify-start text-blue-font whitespace-pre-line font-semibold text-2xl md:text-4xl" style="margin-bottom: 30px;">Integramos as melhores 
+          soluções para um projeto eficaz</h1>
+        <h2 class="whitespace-pre-line text-base md:text-lg ml-1" style="color: #445781;">Com total comprometimento com nossos clientes garantimos uma estrutura sem igual de suporte!</h2>
+           
+            <ul class="fa-ul mt-6">
+            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Profissionais técnicos qualificados</li>
+            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Preços flexíveis com base na necessidade do cliente</li>
+            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Suporte e Pós Venda</li>
+            <li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Contratos de manutenção</li>
+           </ul>
+           <a href="#section4">
+           <button class="slide px-10 py-4 rounded text-white mt-3 ml-4">Entre em contato<i class="fa-solid fa-angle-right text-sm"></i></button>
+          </a>
+          </div>
+    </div>
+  </div>
+</section>
+
+<section class="anime bg-gray-100 hidden md:block" style="margin-top: 5rem;">
+  <div class="px-5 sm:px-10 md:px-20 lg:px-28 flex py-20">
+    
+    <div>
+      <h1 class="b-3 font-arimo text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-xs inline-block">Cinco pilares da qualidade</h1>
+      <p class="max-w-xs text-sm md:text-base font-arimo top-24 right-80 w-36 ">Foco no cliente. O foco principal da gestão da qualidade é atender aos requisitos do cliente e se esforçar exceder suas espectativas</p>
+    </div>
+    
+    <div class="flex flex-row flex-wrap justify-center lg:justify-center items-center">
+      
+      <div class="content bg-cover bg-center relative isolate rounded-full text-center sm:mx-2 p-2 md:p-4 lg:p-7 " style="background-image: url(img/camera-fundo1.jpg);">
+        <i class="fa-solid fa-lock text-2xl md:text-4.5xl mb-2 md:mb-5 text-white"></i>
+        <p class="text-xl font-mono uppercase px-1 sm:px-4 md:px-6 lg:px-8 text-white tracking-wider">Segurança</p>
+      </div>
+      
+      <div class="content1 bg-cover bg-center relative isolate text-center p-2 md:p-4 lg:p-7 mx-2 rounded-full" style="background-image: url(img/camera-fundo1.jpg);">
+        <i class="fa-solid fa-screwdriver-wrench text-2xl md:text-4.5xl mb-2 md:mb-5" style="color: #004a75;"></i>
+        <p class="text-xl font-mono uppercase px-4 md:px-6 lg:px-8 tracking-wider" style="color: #004a75;">Controle</p>
+      </div>
+      
+      <div class="content2 bg-cover bg-center relative isolate text-center  p-2 md:p-4 lg:p-7 mx-2 rounded-full" style="background-image: url(img/camera-fundo1.jpg);">
+        <i class="fa-solid fa-headset text-2xl md:text-4.5xl mb-2 md:mb-5" style="color: #004a75;"></i>
+        <p class="text-xl font-mono uppercase px-4 md:px-6 lg:px-8 tracking-wider" style="color: #004a75;">Suporte</p>
+      </div>
+      
+      <div class="break"></div>
+      
+      <div class="flex flex-row space-x-6 mt-3 mr-3 justify-start">
+        <div class="content3 bg-cover bg-center relative isolate text-center p-2 md:p-2 lg:p-7 rounded-full" style="background-image: url(img/camera-fundo1.jpg);">
+          <i class="fa-solid fa-cloud text-2xl md:text-4.5xl mb-2 md:mb-5 text-white"></i>
+          <p class="text-xl font-mono uppercase px-0 md:px-6 lg:px-10 text-white tracking-wider">Facilidade de acesso</p>
+        </div>
+        <div class="content4 bg-cover bg-center relative isolate text-center p-2 md:p-2 lg:p-7 rounded-full" style="background-image: url(img/camera-fundo1.jpg);">
+          <i class="fa-solid fa-square-poll-vertical text-2xl md:text-4.5xl mb-2 md:mb-5 text-white"></i>
+          <p class="text-xl font-mono uppercase px-0 md:px-4 lg:px-20 text-white tracking-wider">Monitoramento</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<br><br><br><br>
+
+<section id="section4" class="anime antialiased bg-gray-100">
+    <div class="flex w-full min-h-screen justify-center items-center">
+      <div
+       class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-blue-header w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden"
+      >
+      <div class="flex flex-col space-y-8 justify-between">
+        <div>
+          <h1 class="font-bold text-4xl tracking-wide">Contate-nos</h1>
+          <p class="pt-2 text-cyan-100 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ipsam corrupti, omnis laudantium, doloribus labore corporis libero quis officia fuga quisquam ipsa earum ea quasi. Quibusdam saepe quidem asperiores soluta!</p>
+        </div>
+        <div class=" flex flex-col space-y-4">
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
+            <span>+55 11 9999 9999</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
+            <span>contato@website.com</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
+            <span>rua x y, SP-São Paulo</span>
+          </div>
+        </div>
+        <div class="flex space-x-4 text-xl">
+          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
+        
+        <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16"></div>
+
+        <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+          <form method="POST" class="contact-form flex flex-col space-y-4" id="contact-form" >
+            <div class="hidden" id="toast-default">     
+              <div id="toast-success" class="flex items-center p-4 mb-4 w-full max-w-xs text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
+                <div class="inline-flex flex-shrink-0 justify-center items-center w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Check icon</span>
+                </div>
+                <div class="ml-3 text-sm font-normal">Email enviado com sucesso</div>
+                <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-success" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            </div>
+            
+            <div>
+                <label for="" class="text-sm">Seu Nome</label>
+                <input type="text" id="name" placeholder="Seu nome" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+            </div>
+            
+
+          <div>
+            <label for="" class="text-sm">Endereço de Email</label>
+            <input type="email" id="email" placeholder="Endereço de Email" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+        </div>
+
+        <div>
+        <label for="" class="text-sm">Assunto</label>
+        <select id="opcao" class="rounded-md text-base ring-1 ring-gray-300 w-full px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300" >
+          <option value="" disabled selected>Selecione sua opção</option>
+          <option value="instalacao" >Instalação</option>
+          <option value="consultoria">Consultoria</option>
+          <option value="comercializacao">Comercialização</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+            <div>
+              <label for="" class="text-sm">Mensagem</label>
+              <textarea type="email" id="message" placeholder="Mensagem"
+              rows="4"
+              class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+          </div>
+          <button class="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm" id="submitData" name="submitData" type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<br>
+
+
+
+<footer class="p-4 bg-gray-500 rounded-md shadow md:flex md:justify-center md:p-6 dark:bg-gray-800">
+  <span class="text-sm text-white text-center ">© 2022 <span >Hs Smart Solutions™</span>. All Rights Reserved.
+  </span>
+
+</footer>
+
+
+
+
+
+<!--FOOTER-->
+<script type="module" src="app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+$("#submitData").click(function () {
+  $("#toast-default").show();
+  $("#toast-default").delay(2000).fadeOut("slow");
+});
+
+
+  $("nav a").click(function (e) {
+  e.preventDefault();
+  var id = $(this).attr("href");
+  targetOffset = $(id).offset().top,
+  menuHeight = $('nav').innerHeight();
+
+  $('html, body').animate({
+    scrollTop: targetOffset - menuHeight
+  }, 500);
+});
+
+
+// Debounce do Lodash
+debounce = function(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+
+(function(){
+	var $target = $('.anime'),
+			animationClass = 'anime-start',
+			offset = $(window).height() * 3/4;
+
+	function animeScroll() {
+		var documentTop = $(document).scrollTop();
+
+		$target.each(function(){
+			var itemTop = $(this).offset().top;
+			if (documentTop > itemTop - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+
+	animeScroll();
+
+	$(document).scroll(debounce(function(){
+		animeScroll();
+	}, 100));
+})();
+
+</script>
+</body>
+
+
+<style>
+
+
+
+  :root{
+    --blue-box: #286adf;
+    --grey-box: #d3d3d3;
+    --orange-box: #ff8a3d;
+    --dark-blue-box: #15314e;
+  }
+
+
+  .anime{
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+  }
+
+  .anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+
+  
+  select option{
+    background-color: #f3f4f6;
+  }
+
+
+.content::after{
+  content: '';
+  background-color: var(--blue-box);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  border: var(--blue-box) solid;
+  opacity: .7;
+}
+
+.content1::after{
+  content: '';
+  background-color: var(--grey-box);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  border: var(--grey-box) solid;
+  opacity: .7;
+}
+
+.content2::after{
+  content: '';
+  background-color: var(--orange-box);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  border: var(--orange-box) solid;
+  opacity: .8;
+}
+
+.content3::after{
+  content: '';
+  background-color: var(--dark-blue-box);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  border: var(--dark-blue-box solid);
+  opacity: .8;
+}
+
+.content4::after{
+  content: '';
+  background: linear-gradient(90deg, rgba(38,113,107,1) 0%, rgba(116,238,246,1) 46%, rgba(0,212,255,1) 87%);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  border: var(--dark-blue-box solid);
+  opacity: .7;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+.input-container input{
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:black;
+}
+
+.contact-form input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e74c3c;
+}
+textarea{
+  border: none;
+  outline: none;
+}
+
+.sobre-info button{
+  background-color: #1D90C0;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #1D90C0;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  
+}
+
+.slide:hover{
+  box-shadow: inset 300px 0 0 0 #22c55e;
+}
+
+.sobre-info li{
+  margin: 10px 0;
+}
+
+.fa-li{
+  color: #f08923;
+}
+
+
+
+
+.principal{
+  padding: 50px 30px;
+  transition: 0.7s;
+}
+
+.principal span{
+  color: #6b6060;
+  top: 0;
+  right: 0;
+}
+
+.principal:hover span{
+  color: white;
+}
+
+.principal:hover{
+  padding: 30px 30px 70px 30px;
+	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+  .hero{
+    height: 32rem;
+    background-image: url(img/bck.jpg);
+    color: #fff;
+    background-attachment: fixed;
+  }
+
+  .barra::after{
+    content: "";
+    width: 120px;
+    height: 4px;
+    display: inline-block;
+    background: #058dc2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: 0 auto;
+  }
+
+
+  .imagem{
+    z-index: -1;
+    transition: all ease 1s;
+  }
+
+
+</style>
+
+
+</html>
