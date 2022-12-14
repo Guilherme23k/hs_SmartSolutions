@@ -23,14 +23,14 @@
 
 <!--HEADER-->
 <header>
-<nav class="bg-blue-header shadow-lg fixed w-screen z-40 ">
+<nav id="navbar" class=" bg-blue-header -top-28 w-full fixed  z-40 bgcolor" style="transition: top 0.3s;">
   <div class="max-w-6xl mx-auto">
     <div class="flex justify-between">
         <div>
           <!-- Website Logo -->
           <span href="#" class="flex items-center py-4 px-2">
             <img src="img/logo.png" class="h-16  sm:h-20" alt="logo">
-            <span class="self-center md:text-2xl lg:text-2xl text-xl whitespace-nowrap font-logo text-white md:ml-1.5 ">HS smart solutions</span>
+            <span class=" self-center md:text-2xl lg:text-2xl text-xl whitespace-nowrap font-logo text-white md:ml-1.5">HS smart solutions</span>
           </span>
         </div>
         <!-- Primary Navbar items -->
@@ -74,6 +74,17 @@
     btn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
+
+//Função para deslizar navbar para baixo
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+}
   </script>
 </nav>
 </header>
@@ -85,8 +96,9 @@
 
 <main>
 <section id="section1" class="anime hero bg-cover flex justify-center flex-col text-center w-full">
-  <h1 class="text-5xl mb-10 font-lato sm:mb-4 ">Titulo</h1>
-  <h3 class="text-3xl font-lato">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, praesentium?</h3>
+  <h1 class="text-5xl mb-10 font-lato sm:mb-4">Hs Smart Solutions</h1>
+  <h3 class="text-3xl font-lato">Oito anos de experiência de setor privado!<br>
+    Agora aberto ao público atendendo consultoria e projetos</h3>
 </section>
 <br><br><br><br>
 
@@ -131,13 +143,13 @@
   <div class="bg-white h-52 md:h-64 md:w-64 w-32 inline-block p-6 left-2 rounded md:relative top-36 sm:top-2 mx-4 ">
     <img src="img/engenheiro.ico" class="w-10 md:w-16 p-1 md:p-4 bg-blue-bottom rounded " alt="">
     <h2 class="font-arimo text-xs md:text-xl  font-bold text-blue-font">Instalação</h2>
-    <p class="text-xs md:text-sm">Garantimos instalação segura e equipamentos de qualidade!</p>
+    <p class="text-xs md:text-sm">Garantimos instalação segura com profissionais certificados e qualificados!</p>
 </div>
 
 <div class="bg-white h-52 md:h-64 md:w-64 w-32 inline-block p-6 md:mr-8 rounded md:relative top-60 md:mt-8 right-40 ">
   <img src="img/aperto.ico" class="w-10 md:w-16 p-1 md:p-4 bg-blue-bottom rounded " alt="">
   <h2 class="font-arimo text-xs md:text-xl  font-bold text-blue-font">Consultoria</h2>
-  <p class="text-xs md:text-sm">Realizamos consultoria para alinharmos suas necessidades com os nossos serviços!</p>
+  <p class="text-xs md:text-sm">Realizamos consultoria para alinhar as necessidades dentro do seu projeto!</p>
 </div>
   </div>
   <div class="w-full h-full bg-gray-100 flex justify-center mb-36">
@@ -216,26 +228,23 @@
       <div class="flex flex-col space-y-8 justify-between">
         <div>
           <h1 class="font-bold text-4xl tracking-wide">Contate-nos</h1>
-          <p class="pt-2 text-cyan-100 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ipsam corrupti, omnis laudantium, doloribus labore corporis libero quis officia fuga quisquam ipsa earum ea quasi. Quibusdam saepe quidem asperiores soluta!</p>
+          <p class="pt-2 text-cyan-100 text-sm">A HS smart solutions é uma empresa com foco em soluções de tecnologia e segurança eletronica, voltada para area de consultoria, projetos, treinamentos e instalações, visando sempre o que há de mais novo no mercado para trazer segurança e comodidade para seus clientes.
+            Sinta-se a vontade para nos contatar!
+          </p>
         </div>
         <div class=" flex flex-col space-y-4">
           <div class="inline-flex space-x-2 items-center">
             <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
-            <span>+55 11 9999 9999</span>
+            <span>+55 11 95476-9023</span>
           </div>
           <div class="inline-flex space-x-2 items-center">
             <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
-            <span>contato@website.com</span>
-          </div>
-          <div class="inline-flex space-x-2 items-center">
-            <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
-            <span>rua x y, SP-São Paulo</span>
+            <span>solutions.hssmart@gmail.com</span>
           </div>
         </div>
         <div class="flex space-x-4 text-xl">
-          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
-          <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://instagram.com/hs_smart.solutions?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://wa.me/5511954769023" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-whatsapp"></ion-icon></a>
         </div>
       </div>
       <div class="relative">
@@ -275,9 +284,9 @@
         <select id="opcao" class="rounded-md text-base ring-1 ring-gray-300 w-full px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300" >
           <option value="" disabled selected>Selecione sua opção</option>
           <option value="instalacao" >Instalação</option>
-          <option value="consultoria">Consultoria</option>
+          <option value="Produtos">Produtos</option>
           <option value="comercializacao">Comercialização</option>
-          <option value="outros">Outros</option>
+          <option value="Outros">Outros</option>
         </select>
       </div>
 
@@ -390,6 +399,14 @@ debounce = function(func, wait, immediate) {
     --dark-blue-box: #15314e;
   }
 
+ 
+
+  .bgcolor.scrolled{
+    background-color: rgba(9, 42, 73, 1);
+    transition: ease-in-out 0.5s;
+  }
+
+   
 
   .anime{
     opacity: 0;

@@ -11,13 +11,7 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // apiKey: "AIzaSyC0gsWVU42SWA2LbcYR9xYS7HtiZd7qE-Y",
-  // authDomain: "hs-test-afbf2.firebaseapp.com",
-  // databaseURL: "https://hs-test-afbf2-default-rtdb.firebaseio.com",
-  // projectId: "hs-test-afbf2",
-  // storageBucket: "hs-test-afbf2.appspot.com",
-  // messagingSenderId: "527219495256",
-  // appId: "1:527219495256:web:51027b3132b9d701ce952d",
+ 
 
   apiKey: "AIzaSyATt67vlC1_RDUNLQ0CAqzLZ3-yLPEw4_8",
   authDomain: "hs-smartdatabase.firebaseapp.com",
@@ -78,10 +72,10 @@ function submitForm(e) {
       username +
       "<br/>Email: " +
       email +
-      "<br/>Mensagem: " +
-      message +
       "<br/>Opção: " +
-      opcao,
+      opcao +
+      "<br/>Mensagem: " +
+      message,
   });
 }
 
